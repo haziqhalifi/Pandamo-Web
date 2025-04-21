@@ -1,0 +1,91 @@
+.gallery-image {
+  max-width: 100%;
+  height: auto;
+  width: 300px;
+}
+
+body {
+  font-family: "Fredoka", sans-serif;
+  overflow-x: hidden;
+}
+.panda-wave {
+  animation: wave 2s infinite;
+  transform-origin: 70% 70%;
+}
+@keyframes wave {
+  0% {
+    transform: rotate(0deg);
+  }
+  10% {
+    transform: rotate(14deg);
+  }
+  20% {
+    transform: rotate(-8deg);
+  }
+  30% {
+    transform: rotate(14deg);
+  }
+  40% {
+    transform: rotate(-4deg);
+  }
+  50% {
+    transform: rotate(10deg);
+  }
+  60% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+.coin-float {
+  animation: float 6s ease-in-out infinite;
+}
+@keyframes float {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+.bounce {
+  animation: bounce 2s infinite;
+}
+@keyframes bounce {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+/* Update purple colors */
+.text-purple-800 {
+  color: #5c499e;
+}
+.text-purple-700 {
+  color: #6a57b0;
+}
+.text-purple-600 {
+  color: #7865c2;
+}
+.bg-purple-800 {
+  background-color: #5c499e;
+}
+.bg-purple-700 {
+  background-color: #6a57b0;
+}
+.bg-purple-600 {
+  background-color: #7865c2;
+}
+.border-purple-700 {
+  border-color: #6a57b0;
+}
+.text-purple-200 {
+  color: #d1c7f0;
+}
