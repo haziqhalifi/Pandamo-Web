@@ -8,6 +8,26 @@ body {
   font-family: "Fredoka", sans-serif;
   overflow-x: hidden;
 }
+body,
+html {
+  width: 100%;
+  overflow-x: hidden; /* Prevent horizontal scrolling */
+}
+
+.container {
+  max-width: 100%;
+  width: 100%;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.swiper-container {
+  width: 100vw; /* Ensure Swiper fits the screen width */
+}
+
 .panda-wave {
   animation: wave 2s infinite;
   transform-origin: 70% 70%;
