@@ -1,1070 +1,718 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Pandamo - Fun Financial Literacy for Kids</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link
-      href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;600&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body class="bg-purple-50">
-    <!-- Navigation -->
-    <nav class="bg-yellow-400 shadow-lg">
-      <div class="max-w-6xl mx-auto px-4">
-        <div class="flex justify-between">
-          <div class="flex space-x-7">
-            <div class="flex items-center py-4 px-2">
-              <div class="flex items-center">
-                <img
-                  src="/images/pandamo no bg.png"
-                  alt="Pandamo Logo"
-                  class="h-12 w-12 mr-2"
-                />
-                <span class="font-bold text-purple-800 text-2xl">Pandamo</span>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Pandamo - Fun Financial Literacy for Kids</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body class="bg-purple-50">
+  <!-- Navigation -->
+  <nav class="bg-yellow-400 shadow-lg">
+    <div class="max-w-6xl mx-auto px-4">
+      <div class="flex justify-between">
+        <div class="flex space-x-7">
+          <div class="flex items-center py-4 px-2">
+            <div class="flex items-center">
+              <img src="/images/pandamo no bg.png" alt="Pandamo Logo" class="h-12 w-12 mr-2" />
+              <span class="font-bold text-purple-800 text-2xl">Pandamo</span>
+            </div>
+          </div>
+        </div>
+        <div class="hidden md:flex items-center space-x-1">
+          <a href="#home"
+            class="py-4 px-2 text-purple-800 font-semibold hover:text-purple-600 transition duration-300">Home</a>
+          <a href="#about"
+            class="py-4 px-2 text-purple-800 font-semibold hover:text-purple-600 transition duration-300">About</a>
+          <a href="#products"
+            class="py-4 px-2 text-purple-800 font-semibold hover:text-purple-600 transition duration-300">Products</a>
+          <a href="#achievements"
+            class="py-4 px-2 text-purple-800 font-semibold hover:text-purple-600 transition duration-300">Achievements</a>
+          <a href="#team"
+            class="py-4 px-2 text-purple-800 font-semibold hover:text-purple-600 transition duration-300">Our Team</a>
+        </div>
+        <div class="md:hidden flex items-center">
+          <button class="outline-none mobile-menu-button">
+            <svg class="w-6 h-6 text-purple-800" fill="none" stroke-linecap="round" stroke-linejoin="round"
+              stroke-width="2" viewBox="0 0 24 24" stroke="currentColor">
+              <path d="M4 6h16M4 12h16M4 18h16"></path>
+            </svg>
+          </button>
+        </div>
+      </div>
+    </div>
+    <div class="hidden mobile-menu">
+      <ul class="bg-yellow-300">
+        <li>
+          <a href="#home"
+            class="block text-sm px-2 py-4 text-purple-800 font-semibold hover:bg-yellow-400 transition duration-300">Home</a>
+        </li>
+        <li>
+          <a href="#about"
+            class="block text-sm px-2 py-4 text-purple-800 font-semibold hover:bg-yellow-400 transition duration-300">About</a>
+        </li>
+        <li>
+          <a href="#products"
+            class="block text-sm px-2 py-4 text-purple-800 font-semibold hover:bg-yellow-400 transition duration-300">Products</a>
+        </li>
+        <li>
+          <a href="#achievements"
+            class="block text-sm px-2 py-4 text-purple-800 font-semibold hover:bg-yellow-400 transition duration-300">Achievements</a>
+        </li>
+        <li>
+          <a href="#team"
+            class="block text-sm px-2 py-4 text-purple-800 font-semibold hover:bg-yellow-400 transition duration-300">Our
+            Team</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section id="home" class="relative py-20 bg-gradient-to-r from-yellow-300 to-purple-300 overflow-hidden">
+    <div class="absolute top-10 right-10 coin-float">
+      <img src="https://img.icons8.com/color/96/000000/money-bag.png" alt="Coin" class="w-16 h-16 opacity-70" />
+    </div>
+    <div class="absolute bottom-20 left-20 coin-float" style="animation-delay: 0.5s">
+      <img src="https://img.icons8.com/color/96/000000/coins.png" alt="Coin" class="w-12 h-12 opacity-70" />
+    </div>
+    <div class="absolute top-1/3 left-1/4 coin-float" style="animation-delay: 1s">
+      <img src="https://img.icons8.com/color/96/000000/expensive-2.png" alt="Coin" class="w-10 h-10 opacity-70" />
+    </div>
+
+    <div class="container mx-auto px-6 flex flex-col md:flex-row items-center">
+      <div class="md:w-1/2 flex flex-col items-start">
+        <h1 class="text-4xl md:text-5xl font-bold text-purple-800 mb-4">
+          Learn Money the <span class="text-yellow-600">Fun</span> Way!
+        </h1>
+        <p class="text-xl text-purple-700 mb-8">
+          Join Pandamo's adventure to discover saving, spending, and earning
+          through AR games and stories!
+        </p>
+        <div class="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4">
+          <a href="#products"
+            class="bg-purple-600 hover:bg-purple-700 text-white font-bold py-3 px-6 rounded-full shadow-lg transition duration-300 transform hover:scale-105">
+            Get Book & Cards
+          </a>
+          <a href="#"
+            class="bg-yellow-500 hover:bg-yellow-600 text-purple-800 font-bold py-3 px-6 rounded-full shadow-lg transition duration-300 transform hover:scale-105">
+            Download AR App
+          </a>
+        </div>
+      </div>
+      <div class="md:w-1/2 mt-10 md:mt-0 flex justify-center">
+        <img src="/images/pandamo no bg.png" alt="Pandamo Mascot" class="w-64 h-64 panda-wave" />
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="py-20 bg-white">
+    <div class="container mx-auto px-6">
+      <h2 class="text-3xl md:text-4xl font-bold text-center text-purple-800 mb-16">
+        Why Kids Love Pandamo
+      </h2>
+
+      <div class="flex flex-col md:flex-row items-center mb-16">
+        <div class="md:w-1/2 mb-10 md:mb-0">
+          <div class="bg-purple-100 rounded-2xl p-6 shadow-lg">
+            <h3 class="text-2xl font-bold text-yellow-600 mb-4">AR Magic!</h3>
+            <p class="text-purple-700 mb-4">
+              Scan your Pandamo cards with our app to unlock interactive 3D
+              money games!
+            </p>
+            <div class="bg-black rounded-lg overflow-hidden">
+              <!-- Placeholder for AR demo video -->
+              <div class="aspect-w-16 aspect-h-9 bg-purple-300 flex items-center justify-center">
+                <span class="text-white text-lg">AR Demo Video</span>
               </div>
             </div>
           </div>
-          <div class="hidden md:flex items-center space-x-1">
-            <a
-              href="#home"
-              class="py-4 px-2 text-purple-800 font-semibold hover:text-purple-600 transition duration-300"
-              >Home</a
-            >
-            <a
-              href="#about"
-              class="py-4 px-2 text-purple-800 font-semibold hover:text-purple-600 transition duration-300"
-              >About</a
-            >
-            <a
-              href="#products"
-              class="py-4 px-2 text-purple-800 font-semibold hover:text-purple-600 transition duration-300"
-              >Products</a
-            >
-            <a
-              href="#achievements"
-              class="py-4 px-2 text-purple-800 font-semibold hover:text-purple-600 transition duration-300"
-              >Achievements</a
-            >
-            <a
-              href="#team"
-              class="py-4 px-2 text-purple-800 font-semibold hover:text-purple-600 transition duration-300"
-              >Our Team</a
-            >
+        </div>
+        <div class="md:w-1/2 md:pl-12">
+          <div class="grid grid-cols-2 gap-6">
+            <div class="bg-yellow-100 rounded-xl p-6 text-center shadow-md hover:shadow-lg transition duration-300">
+              <div class="flex justify-center mb-4">
+                <img src="https://img.icons8.com/color/96/000000/prize.png" alt="Award" class="w-12 h-12" />
+              </div>
+              <h4 class="font-bold text-purple-800 mb-2">Award-Winning</h4>
+              <p class="text-purple-600">Gold Award @ DICE 2024</p>
+            </div>
+            <div class="bg-yellow-100 rounded-xl p-6 text-center shadow-md hover:shadow-lg transition duration-300">
+              <div class="flex justify-center mb-4">
+                <img src="https://img.icons8.com/color/96/000000/phone.png" alt="AR" class="w-12 h-12" />
+              </div>
+              <h4 class="font-bold text-purple-800 mb-2">AR Interactive</h4>
+              <p class="text-purple-600">Bring money to life!</p>
+            </div>
+            <div class="bg-yellow-100 rounded-xl p-6 text-center shadow-md hover:shadow-lg transition duration-300">
+              <div class="flex justify-center mb-4">
+                <img src="https://img.icons8.com/color/96/000000/book.png" alt="Story" class="w-12 h-12" />
+              </div>
+              <h4 class="font-bold text-purple-800 mb-2">Story-Based</h4>
+              <p class="text-purple-600">Learn through adventures!</p>
+            </div>
+            <div class="bg-yellow-100 rounded-xl p-6 text-center shadow-md hover:shadow-lg transition duration-300">
+              <div class="flex justify-center mb-4">
+                <img src="https://img.icons8.com/color/96/000000/children.png" alt="Kids" class="w-12 h-12" />
+              </div>
+              <h4 class="font-bold text-purple-800 mb-2">Kid-Tested</h4>
+              <p class="text-purple-600">
+                Approved by Pusat Aktiviti Kanak-Kanak Chow Kit
+              </p>
+            </div>
           </div>
-          <div class="md:hidden flex items-center">
-            <button class="outline-none mobile-menu-button">
-              <svg
-                class="w-6 h-6 text-purple-800"
-                fill="none"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width="2"
-                viewBox="0 0 24 24"
-                stroke="currentColor"
-              >
-                <path d="M4 6h16M4 12h16M4 18h16"></path>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Products Section -->
+  <section id="products" class="py-20 bg-purple-100">
+    <div class="container mx-auto px-6">
+      <h2 class="text-3xl md:text-4xl font-bold text-center text-purple-800 mb-16">
+        Get the Full Pandamo Experience
+      </h2>
+
+      <div class="flex flex-col md:flex-row items-center justify-center">
+        <div class="md:w-1/2 mb-10 md:mb-0 flex justify-center">
+          <div class="relative bounce">
+            <img src="https://img.icons8.com/color/480/000000/book-and-pencil.png" alt="Book and Cards"
+              class="w-64 h-64" />
+            <img src="https://img.icons8.com/color/480/000000/queen-of-spades.png" alt="Card"
+              class="w-32 h-32 absolute -right-10 -bottom-10 transform rotate-12" />
+          </div>
+        </div>
+        <div class="md:w-1/2 md:pl-12">
+          <h3 class="text-2xl font-bold text-yellow-600 mb-4">
+            Pandamo Starter Kit
+          </h3>
+          <p class="text-purple-700 mb-6">
+            Includes the adventure storybook and card set that work with our
+            AR app to teach financial literacy through play!
+          </p>
+
+          <ul class="mb-6 text-purple-700">
+            <li class="flex items-center mb-2">
+              <svg class="w-5 h-5 text-yellow-600 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
               </svg>
+              Storybook with Pandamo's money adventures
+            </li>
+            <li class="flex items-center mb-2">
+              <svg class="w-5 h-5 text-yellow-600 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+              </svg>
+              Set of interactive AR cards
+            </li>
+            <li class="flex items-center mb-2">
+              <svg class="w-5 h-5 text-yellow-600 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+              </svg>
+              Free access to the AR app
+            </li>
+          </ul>
+
+          <div class="bg-white rounded-lg p-6 shadow-md inline-block">
+            <p class="text-gray-500 line-through mb-1">RM89.99</p>
+            <p class="text-3xl font-bold text-purple-800 mb-4">RM59.99</p>
+            <button
+              class="bg-yellow-500 hover:bg-yellow-600 text-purple-800 font-bold py-3 px-8 rounded-full shadow-lg transition duration-300 transform hover:scale-105 w-full">
+              Coming Soon
             </button>
           </div>
-        </div>
-      </div>
-      <div class="hidden mobile-menu">
-        <ul class="bg-yellow-300">
-          <li>
-            <a
-              href="#home"
-              class="block text-sm px-2 py-4 text-purple-800 font-semibold hover:bg-yellow-400 transition duration-300"
-              >Home</a
-            >
-          </li>
-          <li>
-            <a
-              href="#about"
-              class="block text-sm px-2 py-4 text-purple-800 font-semibold hover:bg-yellow-400 transition duration-300"
-              >About</a
-            >
-          </li>
-          <li>
-            <a
-              href="#products"
-              class="block text-sm px-2 py-4 text-purple-800 font-semibold hover:bg-yellow-400 transition duration-300"
-              >Products</a
-            >
-          </li>
-          <li>
-            <a
-              href="#achievements"
-              class="block text-sm px-2 py-4 text-purple-800 font-semibold hover:bg-yellow-400 transition duration-300"
-              >Achievements</a
-            >
-          </li>
-          <li>
-            <a
-              href="#team"
-              class="block text-sm px-2 py-4 text-purple-800 font-semibold hover:bg-yellow-400 transition duration-300"
-              >Our Team</a
-            >
-          </li>
-        </ul>
-      </div>
-    </nav>
 
-    <!-- Hero Section -->
-    <section
-      id="home"
-      class="relative py-20 bg-gradient-to-r from-yellow-300 to-purple-300 overflow-hidden"
-    >
-      <div class="absolute top-10 right-10 coin-float">
-        <img
-          src="https://img.icons8.com/color/96/000000/money-bag.png"
-          alt="Coin"
-          class="w-16 h-16 opacity-70"
-        />
-      </div>
-      <div
-        class="absolute bottom-20 left-20 coin-float"
-        style="animation-delay: 0.5s"
-      >
-        <img
-          src="https://img.icons8.com/color/96/000000/coins.png"
-          alt="Coin"
-          class="w-12 h-12 opacity-70"
-        />
-      </div>
-      <div
-        class="absolute top-1/3 left-1/4 coin-float"
-        style="animation-delay: 1s"
-      >
-        <img
-          src="https://img.icons8.com/color/96/000000/expensive-2.png"
-          alt="Coin"
-          class="w-10 h-10 opacity-70"
-        />
-      </div>
-
-      <div
-        class="container mx-auto px-6 flex flex-col md:flex-row items-center"
-      >
-        <div class="md:w-1/2 flex flex-col items-start">
-          <h1 class="text-4xl md:text-5xl font-bold text-purple-800 mb-4">
-            Learn Money the <span class="text-yellow-600">Fun</span> Way!
-          </h1>
-          <p class="text-xl text-purple-700 mb-8">
-            Join Pandamo's adventure to discover saving, spending, and earning
-            through AR games and stories!
-          </p>
-          <div
-            class="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4"
-          >
-            <a
-              href="#products"
-              class="bg-purple-600 hover:bg-purple-700 text-white font-bold py-3 px-6 rounded-full shadow-lg transition duration-300 transform hover:scale-105"
-            >
-              Get Book & Cards
-            </a>
-            <a
-              href="#"
-              class="bg-yellow-500 hover:bg-yellow-600 text-purple-800 font-bold py-3 px-6 rounded-full shadow-lg transition duration-300 transform hover:scale-105"
-            >
-              Download AR App
+          <div class="mt-8">
+            <p class="text-purple-700 mb-2">
+              Don't forget to download our app!
+            </p>
+            <a href="#" class="inline-block">
+              <img src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg"
+                alt="Get it on Google Play" class="h-12" />
             </a>
           </div>
         </div>
-        <div class="md:w-1/2 mt-10 md:mt-0 flex justify-center">
-          <img
-            src="/images/pandamo no bg.png"
-            alt="Pandamo Mascot"
-            class="w-64 h-64 panda-wave"
-          />
+      </div>
+    </div>
+  </section>
+
+  <!-- Achievements Section -->
+  <section id="achievements" class="py-20 bg-white">
+    <div class="container mx-auto px-6">
+      <h2 class="text-3xl md:text-4xl font-bold text-center text-purple-800 mb-16">
+        Our Achievements
+      </h2>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div
+          class="bg-purple-100 rounded-xl p-8 text-center shadow-lg hover:shadow-xl transition duration-300 transform hover:-translate-y-2">
+          <div class="flex justify-center mb-6">
+            <img src="https://img.icons8.com/color/96/000000/medal2.png" alt="Gold Award" class="w-20 h-20" />
+          </div>
+          <h3 class="text-xl font-bold text-yellow-600 mb-2">Gold Award</h3>
+          <p class="text-purple-700 font-semibold mb-4">DICE 2024</p>
+          <p class="text-purple-600">
+            Recognized for innovation in children's education
+          </p>
+        </div>
+
+        <div
+          class="bg-yellow-100 rounded-xl p-8 text-center shadow-lg hover:shadow-xl transition duration-300 transform hover:-translate-y-2">
+          <div class="flex justify-center mb-6">
+            <img src="https://img.icons8.com/color/96/000000/trophy.png" alt="1st Place" class="w-20 h-20" />
+          </div>
+          <h3 class="text-xl font-bold text-purple-800 mb-2">1st Place</h3>
+          <p class="text-purple-700 font-semibold mb-4">
+            Ulul Albab Competition
+          </p>
+          <p class="text-purple-600">Awarded for best educational product</p>
+        </div>
+
+        <div
+          class="bg-purple-100 rounded-xl p-8 text-center shadow-lg hover:shadow-xl transition duration-300 transform hover:-translate-y-2">
+          <div class="flex justify-center mb-6">
+            <img src="https://img.icons8.com/color/96/000000/checked-2.png" alt="Tested" class="w-20 h-20" />
+          </div>
+          <h3 class="text-xl font-bold text-yellow-600 mb-2">Kid-Approved</h3>
+          <p class="text-purple-700 font-semibold mb-4">
+            Tested with Pusat Aktiviti Kanak-Kanak Chow Kit
+          </p>
+          <p class="text-purple-600">Verified by real kids and educators</p>
         </div>
       </div>
-    </section>
 
-    <!-- About Section -->
-    <section id="about" class="py-20 bg-white">
-      <div class="container mx-auto px-6">
-        <h2
-          class="text-3xl md:text-4xl font-bold text-center text-purple-800 mb-16"
-        >
-          Why Kids Love Pandamo
-        </h2>
-
-        <div class="flex flex-col md:flex-row items-center mb-16">
-          <div class="md:w-1/2 mb-10 md:mb-0">
-            <div class="bg-purple-100 rounded-2xl p-6 shadow-lg">
-              <h3 class="text-2xl font-bold text-yellow-600 mb-4">AR Magic!</h3>
-              <p class="text-purple-700 mb-4">
-                Scan your Pandamo cards with our app to unlock interactive 3D
-                money games!
-              </p>
-              <div class="bg-black rounded-lg overflow-hidden">
-                <!-- Placeholder for AR demo video -->
-                <div
-                  class="aspect-w-16 aspect-h-9 bg-purple-300 flex items-center justify-center"
-                >
-                  <span class="text-white text-lg">AR Demo Video</span>
+      <div class="mt-16 bg-gradient-to-r from-yellow-300 to-purple-300 rounded-2xl p-8 shadow-lg">
+        <h3 class="text-2xl font-bold text-purple-800 mb-6 text-center">
+          What Parents Say
+        </h3>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+          <div class="bg-white bg-opacity-80 rounded-xl p-6">
+            <div class="flex items-center mb-4">
+              <img src="https://img.icons8.com/color/96/000000/user-female-circle.png" alt="Parent"
+                class="w-12 h-12 mr-4" />
+              <div>
+                <h4 class="font-bold text-purple-800">Aina's Mom</h4>
+                <div class="flex">
+                  <img src="https://img.icons8.com/color/16/000000/star.png" alt="Star" />
+                  <img src="https://img.icons8.com/color/16/000000/star.png" alt="Star" />
+                  <img src="https://img.icons8.com/color/16/000000/star.png" alt="Star" />
+                  <img src="https://img.icons8.com/color/16/000000/star.png" alt="Star" />
+                  <img src="https://img.icons8.com/color/16/000000/star.png" alt="Star" />
                 </div>
               </div>
             </div>
+            <p class="text-purple-700 italic">
+              "My daughter now understands the value of money and even started
+              her own piggy bank after using Pandamo!"
+            </p>
           </div>
-          <div class="md:w-1/2 md:pl-12">
-            <div class="grid grid-cols-2 gap-6">
-              <div
-                class="bg-yellow-100 rounded-xl p-6 text-center shadow-md hover:shadow-lg transition duration-300"
-              >
-                <div class="flex justify-center mb-4">
-                  <img
-                    src="https://img.icons8.com/color/96/000000/prize.png"
-                    alt="Award"
-                    class="w-12 h-12"
-                  />
+          <div class="bg-white bg-opacity-80 rounded-xl p-6">
+            <div class="flex items-center mb-4">
+              <img src="https://img.icons8.com/color/96/000000/user-male-circle.png" alt="Parent"
+                class="w-12 h-12 mr-4" />
+              <div>
+                <h4 class="font-bold text-purple-800">Haziq's Dad</h4>
+                <div class="flex">
+                  <img src="https://img.icons8.com/color/16/000000/star.png" alt="Star" />
+                  <img src="https://img.icons8.com/color/16/000000/star.png" alt="Star" />
+                  <img src="https://img.icons8.com/color/16/000000/star.png" alt="Star" />
+                  <img src="https://img.icons8.com/color/16/000000/star.png" alt="Star" />
+                  <img src="https://img.icons8.com/color/16/000000/star.png" alt="Star" />
                 </div>
-                <h4 class="font-bold text-purple-800 mb-2">Award-Winning</h4>
-                <p class="text-purple-600">Gold Award @ DICE 2024</p>
               </div>
-              <div
-                class="bg-yellow-100 rounded-xl p-6 text-center shadow-md hover:shadow-lg transition duration-300"
-              >
-                <div class="flex justify-center mb-4">
-                  <img
-                    src="https://img.icons8.com/color/96/000000/phone.png"
-                    alt="AR"
-                    class="w-12 h-12"
-                  />
-                </div>
-                <h4 class="font-bold text-purple-800 mb-2">AR Interactive</h4>
-                <p class="text-purple-600">Bring money to life!</p>
+            </div>
+            <p class="text-purple-700 italic">
+              "The AR technology makes learning so engaging. My son doesn't
+              even realize he's learning important life skills!"
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Photo Gallery Section -->
+  <section id="gallery" class="py-20 bg-white">
+    <div class="container mx-auto px-6">
+      <h2 class="text-3xl md:text-4xl font-bold text-center text-purple-800 mb-16">
+        Pandamo Photo Gallery
+      </h2>
+      <div class="relative overflow-hidden">
+        <div class="swiper-container">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div class="flex flex-col items-center">
+                <img src="images/IMG_0593.JPG" alt="Gallery Photo 1" class="rounded-lg shadow-md mb-4 gallery-image" />
+                <p class="text-purple-700 text-center">
+                  Makan-makan with Pandamo's Volunteer!
+                </p>
               </div>
-              <div
-                class="bg-yellow-100 rounded-xl p-6 text-center shadow-md hover:shadow-lg transition duration-300"
-              >
-                <div class="flex justify-center mb-4">
-                  <img
-                    src="https://img.icons8.com/color/96/000000/book.png"
-                    alt="Story"
-                    class="w-12 h-12"
-                  />
-                </div>
-                <h4 class="font-bold text-purple-800 mb-2">Story-Based</h4>
-                <p class="text-purple-600">Learn through adventures!</p>
+            </div>
+            <div class="swiper-slide">
+              <div class="flex flex-col items-center">
+                <img src="images/IMG_0451.JPG" alt="Gallery Photo 2" class="rounded-lg shadow-md mb-4 gallery-image" />
+                <p class="text-purple-700 text-center">
+                  Kids doing activities with our team.
+                </p>
               </div>
-              <div
-                class="bg-yellow-100 rounded-xl p-6 text-center shadow-md hover:shadow-lg transition duration-300"
-              >
-                <div class="flex justify-center mb-4">
-                  <img
-                    src="https://img.icons8.com/color/96/000000/children.png"
-                    alt="Kids"
-                    class="w-12 h-12"
-                  />
-                </div>
-                <h4 class="font-bold text-purple-800 mb-2">Kid-Tested</h4>
-                <p class="text-purple-600">
-                  Approved by Pusat Aktiviti Kanak-Kanak Chow Kit
+            </div>
+            <div class="swiper-slide">
+              <div class="flex flex-col items-center">
+                <img src="images/IMG_0452.JPG" alt="Gallery Photo 3" class="rounded-lg shadow-md mb-4 gallery-image" />
+                <p class="text-purple-700 text-center">
+                  Ice-breaking session stared.
+                </p>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="flex flex-col items-center">
+                <img src="images/IMG_0548.JPG" alt="Gallery Photo 4" class="rounded-lg shadow-md mb-4 gallery-image" />
+                <p class="text-purple-700 text-center">
+                  Recap session started.
+                </p>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="flex flex-col items-center">
+                <img src="images/IMG_0454.JPG" alt="Gallery Photo 5" class="rounded-lg shadow-md mb-4 gallery-image" />
+                <p class="text-purple-700 text-center">
+                  Haziq introduced our money card game.
+                </p>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="flex flex-col items-center">
+                <img src="images/IMG_0455.JPG" alt="Gallery Photo 6" class="rounded-lg shadow-md mb-4 gallery-image" />
+                <p class="text-purple-700 text-center">
+                  Haziq demonstrated how to play the game.
                 </p>
               </div>
             </div>
           </div>
+          <!-- Navigation buttons -->
+          <div class="swiper-button-next" style="color: orange"></div>
+          <div class="swiper-button-prev" style="color: orange"></div>
         </div>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <!-- Products Section -->
-    <section id="products" class="py-20 bg-purple-100">
-      <div class="container mx-auto px-6">
-        <h2
-          class="text-3xl md:text-4xl font-bold text-center text-purple-800 mb-16"
-        >
-          Get the Full Pandamo Experience
-        </h2>
+  <!-- SwiperJS CDN -->
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+  <script>
+    // Initialize Swiper
+    const swiper = new Swiper(".swiper-container", {
+      loop: true,
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+      slidesPerView: 1,
+      spaceBetween: 20,
+      breakpoints: {
+        640: {
+          slidesPerView: 2,
+          spaceBetween: 20,
+        },
+        1024: {
+          slidesPerView: 3,
+          spaceBetween: 30,
+        },
+      },
+    });
+  </script>
 
-        <div class="flex flex-col md:flex-row items-center justify-center">
-          <div class="md:w-1/2 mb-10 md:mb-0 flex justify-center">
-            <div class="relative bounce">
-              <img
-                src="https://img.icons8.com/color/480/000000/book-and-pencil.png"
-                alt="Book and Cards"
-                class="w-64 h-64"
-              />
-              <img
-                src="https://img.icons8.com/color/480/000000/queen-of-spades.png"
-                alt="Card"
-                class="w-32 h-32 absolute -right-10 -bottom-10 transform rotate-12"
-              />
-            </div>
+  <!-- Team Section -->
+  <section id="team" class="py-20 bg-purple-100">
+    <div class="container mx-auto px-6">
+      <h2 class="text-3xl md:text-4xl font-bold text-center text-purple-800 mb-16">
+        Meet the Pandamo Team
+      </h2>
+
+      <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-8">
+        <div
+          class="bg-white rounded-xl p-6 text-center shadow-lg hover:shadow-xl transition duration-300 transform hover:-translate-y-2">
+          <div class="relative mb-4">
+            <img src="https://img.icons8.com/color/96/000000/user-male-circle.png" alt="Rafi"
+              class="w-24 h-24 mx-auto" />
+            <img src="/images/pandamo no bg.png" alt="Panda" class="w-10 h-10 absolute -top-3 -right-3" />
           </div>
-          <div class="md:w-1/2 md:pl-12">
-            <h3 class="text-2xl font-bold text-yellow-600 mb-4">
-              Pandamo Starter Kit
-            </h3>
-            <p class="text-purple-700 mb-6">
-              Includes the adventure storybook and card set that work with our
-              AR app to teach financial literacy through play!
-            </p>
+          <h3 class="text-xl font-bold text-purple-800 mb-1">Rafi</h3>
+          <p class="text-yellow-600 font-semibold mb-3">The Money Wizard</p>
+          <p class="text-purple-600 text-sm">Financial education expert</p>
+        </div>
 
-            <ul class="mb-6 text-purple-700">
-              <li class="flex items-center mb-2">
-                <svg
-                  class="w-5 h-5 text-yellow-600 mr-2"
-                  fill="none"
-                  stroke="currentColor"
-                  viewBox="0 0 24 24"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    stroke-width="2"
-                    d="M5 13l4 4L19 7"
-                  ></path>
-                </svg>
-                Storybook with Pandamo's money adventures
+        <div
+          class="bg-white rounded-xl p-6 text-center shadow-lg hover:shadow-xl transition duration-300 transform hover:-translate-y-2">
+          <div class="relative mb-4">
+            <img src="https://img.icons8.com/color/96/000000/user-male-circle.png" alt="Irfan"
+              class="w-24 h-24 mx-auto" />
+            <img src="/images/pandamo no bg.png" alt="Panda" class="w-10 h-10 absolute -top-3 -right-3" />
+          </div>
+          <h3 class="text-xl font-bold text-purple-800 mb-1">Haziq</h3>
+          <p class="text-yellow-600 font-semibold mb-3">Marketing guy</p>
+          <p class="text-purple-600 text-sm">Share fun learning with you</p>
+        </div>
+
+        <div
+          class="bg-white rounded-xl p-6 text-center shadow-lg hover:shadow-xl transition duration-300 transform hover:-translate-y-2">
+          <div class="relative mb-4">
+            <img src="https://img.icons8.com/color/96/000000/user-male-circle.png" alt="Haziq"
+              class="w-24 h-24 mx-auto" />
+            <img src="/images/pandamo no bg.png" alt="Panda" class="w-10 h-10 absolute -top-3 -right-3" />
+          </div>
+          <h3 class="text-xl font-bold text-purple-800 mb-1">Irfan</h3>
+          <p class="text-yellow-600 font-semibold mb-3">Story Creator</p>
+          <p class="text-purple-600 text-sm">Makes finance fun</p>
+        </div>
+
+        <div
+          class="bg-white rounded-xl p-6 text-center shadow-lg hover:shadow-xl transition duration-300 transform hover:-translate-y-2">
+          <div class="relative mb-4">
+            <img src="https://img.icons8.com/color/96/000000/user-female-circle.png" alt="Hudzad"
+              class="w-24 h-24 mx-auto" />
+            <img src="/images/pandamo no bg.png" alt="Panda" class="w-10 h-10 absolute -top-3 -right-3" />
+          </div>
+          <h3 class="text-xl font-bold text-purple-800 mb-1">Hudazad</h3>
+          <p class="text-yellow-600 font-semibold mb-3">Design Master</p>
+          <p class="text-purple-600 text-sm">Brings Pandamo to life</p>
+        </div>
+
+        <div
+          class="bg-white rounded-xl p-6 text-center shadow-lg hover:shadow-xl transition duration-300 transform hover:-translate-y-2">
+          <div class="relative mb-4">
+            <img src="https://img.icons8.com/color/96/000000/user-female-circle.png" alt="Aina"
+              class="w-24 h-24 mx-auto" />
+            <img src="/images/pandamo no bg.png" alt="Panda" class="w-10 h-10 absolute -top-3 -right-3" />
+          </div>
+          <h3 class="text-xl font-bold text-purple-800 mb-1">Aina</h3>
+          <p class="text-yellow-600 font-semibold mb-3">Education Expert</p>
+          <p class="text-purple-600 text-sm">Kid-approved learning</p>
+        </div>
+      </div>
+
+      <div class="mt-16 text-center">
+        <h3 class="text-2xl font-bold text-purple-800 mb-6">
+          Follow Pandamo's Adventures!
+        </h3>
+        <div class="flex justify-center space-x-6">
+          <a href="https://www.instagram.com/learnwithpandamo/"
+            class="bg-purple-600 text-white p-3 rounded-full hover:bg-purple-700 transition duration-300">
+            <img src="https://img.icons8.com/color/48/000000/instagram-new.png" alt="Instagram" class="w-8 h-8" />
+          </a>
+          <a href="https://www.facebook.com/profile.php?id=61561466416930"
+            class="bg-purple-600 text-white p-3 rounded-full hover:bg-purple-700 transition duration-300">
+            <img src="https://img.icons8.com/color/48/000000/facebook.png" alt="Facebook" class="w-8 h-8" />
+          </a>
+          <a href="https://www.linkedin.com/company/pandamohq/"
+            class="bg-purple-600 text-white p-3 rounded-full hover:bg-purple-700 transition duration-300">
+            <img src="https://img.icons8.com/?size=100&id=xuvGCOXi8Wyg&format=png&color=000000" alt="TikTok"
+              class="w-8 h-8" />
+          </a>
+          <a href="https://www.youtube.com/@LearnWithPandamo"
+            class="bg-purple-600 text-white p-3 rounded-full hover:bg-purple-700 transition duration-300">
+            <img src="https://img.icons8.com/color/48/000000/youtube-play.png" alt="YouTube" class="w-8 h-8" />
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact-form" class="py-20 bg-white">
+    <div class="container mx-auto px-6">
+      <h2 class="text-3xl md:text-4xl font-bold text-center text-purple-800 mb-16">
+        Share Your Thoughts </h2>
+      <div class="flex justify-center">
+        <iframe
+          src="https://docs.google.com/forms/d/e/1FAIpQLScy6FAADIx09vnw0BtQsRjfAVphB1vUvCK-f83oGhb7zzUsEA/viewform?embedded=true"
+          width="640" height="580" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-purple-800 text-white py-12">
+    <div class="container mx-auto px-6">
+      <div class="flex flex-col md:flex-row justify-between">
+        <div class="mb-8 md:mb-0">
+          <div class="flex items-center mb-4">
+            <img src="/images/pandamo no bg.png" alt="Pandamo Logo" class="h-10 w-10 mr-2" />
+            <span class="font-bold text-xl">Pandamo</span>
+          </div>
+          <p class="text-purple-200 mb-4">
+            Making financial literacy fun for kids aged 6-12 through AR
+            technology and storytelling.
+          </p>
+          <a href="#" class="inline-block mb-6">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg"
+              alt="Get it on Google Play" class="h-10" />
+          </a>
+        </div>
+
+        <div class="grid grid-cols-2 md:grid-cols-3 gap-8">
+          <div>
+            <h4 class="font-bold text-yellow-400 mb-4">Quick Links</h4>
+            <ul class="space-y-2">
+              <li>
+                <a href="#home" class="text-purple-200 hover:text-white transition duration-300">Home</a>
               </li>
-              <li class="flex items-center mb-2">
-                <svg
-                  class="w-5 h-5 text-yellow-600 mr-2"
-                  fill="none"
-                  stroke="currentColor"
-                  viewBox="0 0 24 24"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    stroke-width="2"
-                    d="M5 13l4 4L19 7"
-                  ></path>
-                </svg>
-                Set of interactive AR cards
+              <li>
+                <a href="#about" class="text-purple-200 hover:text-white transition duration-300">About</a>
               </li>
-              <li class="flex items-center mb-2">
-                <svg
-                  class="w-5 h-5 text-yellow-600 mr-2"
-                  fill="none"
-                  stroke="currentColor"
-                  viewBox="0 0 24 24"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    stroke-width="2"
-                    d="M5 13l4 4L19 7"
-                  ></path>
-                </svg>
-                Free access to the AR app
+              <li>
+                <a href="#products" class="text-purple-200 hover:text-white transition duration-300">Products</a>
+              </li>
+              <li>
+                <a href="#achievements"
+                  class="text-purple-200 hover:text-white transition duration-300">Achievements</a>
+              </li>
+              <li>
+                <a href="#team" class="text-purple-200 hover:text-white transition duration-300">Our Team</a>
               </li>
             </ul>
+          </div>
 
-            <div class="bg-white rounded-lg p-6 shadow-md inline-block">
-              <p class="text-gray-500 line-through mb-1">RM89.99</p>
-              <p class="text-3xl font-bold text-purple-800 mb-4">RM59.99</p>
-              <button
-                class="bg-yellow-500 hover:bg-yellow-600 text-purple-800 font-bold py-3 px-8 rounded-full shadow-lg transition duration-300 transform hover:scale-105 w-full"
-              >
-                Coming Soon
+          <div>
+            <h4 class="font-bold text-yellow-400 mb-4">Contact Us</h4>
+            <ul class="space-y-2">
+              <li class="flex items-center">
+                <img src="https://img.icons8.com/color/24/000000/whatsapp.png" alt="WhatsApp" class="w-5 h-5 mr-2" />
+                <span class="text-purple-200">+60143992144</span>
+              </li>
+              <li class="flex items-center">
+                <img src="https://img.icons8.com/color/24/000000/email.png" alt="Email" class="w-5 h-5 mr-2" />
+                <span class="text-purple-200">pandamo.work@gmail.com</span>
+              </li>
+            </ul>
+          </div>
+
+          <div>
+            <h4 class="font-bold text-yellow-400 mb-4">Newsletter</h4>
+            <p class="text-purple-200 mb-4">Get money tips for your kids!</p>
+            <form id="newsletter-form" class="flex">
+              <input type="email" id="newsletter-email" placeholder="Your email"
+                class="px-4 py-2 rounded-l-lg focus:outline-none text-purple-800 w-full" required />
+              <button type="submit"
+                class="bg-yellow-500 text-purple-800 px-4 py-2 rounded-r-lg font-bold hover:bg-yellow-600 transition duration-300">
+                Join
+              </button>
+            </form>
+          </div>
+
+          <!-- Modal -->
+          <div id="thank-you-modal"
+            class="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center hidden">
+            <div class="bg-white rounded-lg p-6 shadow-lg text-center">
+              <h3 class="text-xl font-bold text-purple-800 mb-4">
+                Thank You!
+              </h3>
+              <p class="text-purple-700 mb-4">
+                Thanks for signing up for our newsletter!
+              </p>
+              <button id="close-modal"
+                class="bg-yellow-500 text-purple-800 px-4 py-2 rounded-lg font-bold hover:bg-yellow-600 transition duration-300">
+                Close
               </button>
             </div>
-
-            <div class="mt-8">
-              <p class="text-purple-700 mb-2">
-                Don't forget to download our app!
-              </p>
-              <a href="#" class="inline-block">
-                <img
-                  src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg"
-                  alt="Get it on Google Play"
-                  class="h-12"
-                />
-              </a>
-            </div>
           </div>
+
+          <script>
+            const form = document.getElementById("newsletter-form");
+            const emailInput = document.getElementById("newsletter-email");
+            const modal = document.getElementById("thank-you-modal");
+            const closeModal = document.getElementById("close-modal");
+
+            form.addEventListener("submit", (e) => {
+              e.preventDefault();
+              const email = emailInput.value;
+
+              // Save email to localStorage (or send to server via API)
+              localStorage.setItem("newsletterEmail", email);
+
+              // Show modal
+              modal.classList.remove("hidden");
+            });
+
+            closeModal.addEventListener("click", () => {
+              modal.classList.add("hidden");
+            });
+          </script>
         </div>
       </div>
-    </section>
 
-    <!-- Achievements Section -->
-    <section id="achievements" class="py-20 bg-white">
-      <div class="container mx-auto px-6">
-        <h2
-          class="text-3xl md:text-4xl font-bold text-center text-purple-800 mb-16"
-        >
-          Our Achievements
-        </h2>
-
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-          <div
-            class="bg-purple-100 rounded-xl p-8 text-center shadow-lg hover:shadow-xl transition duration-300 transform hover:-translate-y-2"
-          >
-            <div class="flex justify-center mb-6">
-              <img
-                src="https://img.icons8.com/color/96/000000/medal2.png"
-                alt="Gold Award"
-                class="w-20 h-20"
-              />
-            </div>
-            <h3 class="text-xl font-bold text-yellow-600 mb-2">Gold Award</h3>
-            <p class="text-purple-700 font-semibold mb-4">DICE 2024</p>
-            <p class="text-purple-600">
-              Recognized for innovation in children's education
-            </p>
-          </div>
-
-          <div
-            class="bg-yellow-100 rounded-xl p-8 text-center shadow-lg hover:shadow-xl transition duration-300 transform hover:-translate-y-2"
-          >
-            <div class="flex justify-center mb-6">
-              <img
-                src="https://img.icons8.com/color/96/000000/trophy.png"
-                alt="1st Place"
-                class="w-20 h-20"
-              />
-            </div>
-            <h3 class="text-xl font-bold text-purple-800 mb-2">1st Place</h3>
-            <p class="text-purple-700 font-semibold mb-4">
-              Ulul Albab Competition
-            </p>
-            <p class="text-purple-600">Awarded for best educational product</p>
-          </div>
-
-          <div
-            class="bg-purple-100 rounded-xl p-8 text-center shadow-lg hover:shadow-xl transition duration-300 transform hover:-translate-y-2"
-          >
-            <div class="flex justify-center mb-6">
-              <img
-                src="https://img.icons8.com/color/96/000000/checked-2.png"
-                alt="Tested"
-                class="w-20 h-20"
-              />
-            </div>
-            <h3 class="text-xl font-bold text-yellow-600 mb-2">Kid-Approved</h3>
-            <p class="text-purple-700 font-semibold mb-4">
-              Tested with Pusat Aktiviti Kanak-Kanak Chow Kit
-            </p>
-            <p class="text-purple-600">Verified by real kids and educators</p>
-          </div>
-        </div>
-
-        <div
-          class="mt-16 bg-gradient-to-r from-yellow-300 to-purple-300 rounded-2xl p-8 shadow-lg"
-        >
-          <h3 class="text-2xl font-bold text-purple-800 mb-6 text-center">
-            What Parents Say
-          </h3>
-          <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-            <div class="bg-white bg-opacity-80 rounded-xl p-6">
-              <div class="flex items-center mb-4">
-                <img
-                  src="https://img.icons8.com/color/96/000000/user-female-circle.png"
-                  alt="Parent"
-                  class="w-12 h-12 mr-4"
-                />
-                <div>
-                  <h4 class="font-bold text-purple-800">Aina's Mom</h4>
-                  <div class="flex">
-                    <img
-                      src="https://img.icons8.com/color/16/000000/star.png"
-                      alt="Star"
-                    />
-                    <img
-                      src="https://img.icons8.com/color/16/000000/star.png"
-                      alt="Star"
-                    />
-                    <img
-                      src="https://img.icons8.com/color/16/000000/star.png"
-                      alt="Star"
-                    />
-                    <img
-                      src="https://img.icons8.com/color/16/000000/star.png"
-                      alt="Star"
-                    />
-                    <img
-                      src="https://img.icons8.com/color/16/000000/star.png"
-                      alt="Star"
-                    />
-                  </div>
-                </div>
-              </div>
-              <p class="text-purple-700 italic">
-                "My daughter now understands the value of money and even started
-                her own piggy bank after using Pandamo!"
-              </p>
-            </div>
-            <div class="bg-white bg-opacity-80 rounded-xl p-6">
-              <div class="flex items-center mb-4">
-                <img
-                  src="https://img.icons8.com/color/96/000000/user-male-circle.png"
-                  alt="Parent"
-                  class="w-12 h-12 mr-4"
-                />
-                <div>
-                  <h4 class="font-bold text-purple-800">Haziq's Dad</h4>
-                  <div class="flex">
-                    <img
-                      src="https://img.icons8.com/color/16/000000/star.png"
-                      alt="Star"
-                    />
-                    <img
-                      src="https://img.icons8.com/color/16/000000/star.png"
-                      alt="Star"
-                    />
-                    <img
-                      src="https://img.icons8.com/color/16/000000/star.png"
-                      alt="Star"
-                    />
-                    <img
-                      src="https://img.icons8.com/color/16/000000/star.png"
-                      alt="Star"
-                    />
-                    <img
-                      src="https://img.icons8.com/color/16/000000/star.png"
-                      alt="Star"
-                    />
-                  </div>
-                </div>
-              </div>
-              <p class="text-purple-700 italic">
-                "The AR technology makes learning so engaging. My son doesn't
-                even realize he's learning important life skills!"
-              </p>
-            </div>
-          </div>
-        </div>
+      <div class="border-t border-purple-700 mt-12 pt-8 text-center text-purple-300">
+        <p>&copy; 2024 Pandamo. All rights reserved.</p>
       </div>
-    </section>
+    </div>
+  </footer>
 
-    <!-- Photo Gallery Section -->
-    <section id="gallery" class="py-20 bg-white">
-      <div class="container mx-auto px-6">
-        <h2
-          class="text-3xl md:text-4xl font-bold text-center text-purple-800 mb-16"
-        >
-          Pandamo Photo Gallery
-        </h2>
-        <div class="relative">
-          <div class="swiper-container">
-            <div class="swiper-wrapper">
-              <div class="swiper-slide">
-                <div class="flex flex-col items-center">
-                  <img
-                    src="images/IMG_0593.JPG"
-                    alt="Gallery Photo 1"
-                    class="rounded-lg shadow-md mb-4 gallery-image"
-                  />
-                  <p class="text-purple-700 text-center">
-                    Pandamo's first AR demo event!
-                  </p>
-                </div>
-              </div>
-              <div class="swiper-slide">
-                <div class="flex flex-col items-center">
-                  <img
-                    src="images/IMG_0451.JPG"
-                    alt="Gallery Photo 2"
-                    class="rounded-lg shadow-md mb-4 gallery-image"
-                  />
-                  <p class="text-purple-700 text-center">
-                    Kids enjoying Pandamo's storybook.
-                  </p>
-                </div>
-              </div>
-              <div class="swiper-slide">
-                <div class="flex flex-col items-center">
-                  <img
-                    src="images/IMG_0452.JPG"
-                    alt="Gallery Photo 2"
-                    class="rounded-lg shadow-md mb-4 gallery-image"
-                  />
-                  <p class="text-purple-700 text-center">
-                    Kids enjoying Pandamo's storybook.
-                  </p>
-                </div>
-              </div>
-              <div class="swiper-slide">
-                <div class="flex flex-col items-center">
-                  <img
-                    src="images/IMG_0548.JPG"
-                    alt="Gallery Photo 2"
-                    class="rounded-lg shadow-md mb-4 gallery-image"
-                  />
-                  <p class="text-purple-700 text-center">
-                    Kids enjoying Pandamo's storybook.
-                  </p>
-                </div>
-              </div>
-              <div class="swiper-slide">
-                <div class="flex flex-col items-center">
-                  <img
-                    src="images/IMG_0454.JPG"
-                    alt="Gallery Photo 2"
-                    class="rounded-lg shadow-md mb-4 gallery-image"
-                  />
-                  <p class="text-purple-700 text-center">
-                    Kids enjoying Pandamo's storybook.
-                  </p>
-                </div>
-              </div>
-              <div class="swiper-slide">
-                <div class="flex flex-col items-center">
-                  <img
-                    src="images/IMG_0455.JPG"
-                    alt="Gallery Photo 3"
-                    class="rounded-lg shadow-md mb-4 gallery-image"
-                  />
-                  <p class="text-purple-700 text-center">
-                    Fun with AR cards at a workshop!
-                  </p>
-                </div>
-              </div>
-            </div>
-            <!-- Navigation buttons -->
-            <div class="swiper-button-next" style="color: orange"></div>
-            <div class="swiper-button-prev" style="color: orange"></div>
-            <!-- Pagination -->
-            <!-- <div class="swiper-pagination"></div> -->
-          </div>
-        </div>
-      </div>
-    </section>
+  <script>
+    // Mobile menu toggle
+    const btn = document.querySelector(".mobile-menu-button");
+    const menu = document.querySelector(".mobile-menu");
 
-    <!-- SwiperJS CDN -->
-    <link
-      rel="stylesheet"
-      href="https://unpkg.com/swiper/swiper-bundle.min.css"
-    />
-    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-    <script>
-      // Initialize Swiper
-      const swiper = new Swiper(".swiper-container", {
-        loop: true,
-        navigation: {
-          nextEl: ".swiper-button-next",
-          prevEl: ".swiper-button-prev",
-        },
-        pagination: {
-          el: ".swiper-pagination",
-          clickable: true,
-        },
-        slidesPerView: 1,
-        spaceBetween: 20,
-        breakpoints: {
-          640: {
-            slidesPerView: 2,
-            spaceBetween: 20,
-          },
-          1024: {
-            slidesPerView: 3,
-            spaceBetween: 30,
-          },
-        },
-      });
-    </script>
+    btn.addEventListener("click", () => {
+      menu.classList.toggle("hidden");
+    });
 
-    <!-- Team Section -->
-    <section id="team" class="py-20 bg-purple-100">
-      <div class="container mx-auto px-6">
-        <h2
-          class="text-3xl md:text-4xl font-bold text-center text-purple-800 mb-16"
-        >
-          Meet the Pandamo Team
-        </h2>
+    // Smooth scrolling for anchor links
+    document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
+      anchor.addEventListener("click", function (e) {
+        e.preventDefault();
 
-        <div
-          class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-8"
-        >
-          <div
-            class="bg-white rounded-xl p-6 text-center shadow-lg hover:shadow-xl transition duration-300 transform hover:-translate-y-2"
-          >
-            <div class="relative mb-4">
-              <img
-                src="https://img.icons8.com/color/96/000000/user-male-circle.png"
-                alt="Rafi"
-                class="w-24 h-24 mx-auto"
-              />
-              <img
-                src="/images/pandamo no bg.png"
-                alt="Panda"
-                class="w-10 h-10 absolute -top-3 -right-3"
-              />
-            </div>
-            <h3 class="text-xl font-bold text-purple-800 mb-1">Rafi</h3>
-            <p class="text-yellow-600 font-semibold mb-3">The Money Wizard</p>
-            <p class="text-purple-600 text-sm">Financial education expert</p>
-          </div>
-
-          <div
-            class="bg-white rounded-xl p-6 text-center shadow-lg hover:shadow-xl transition duration-300 transform hover:-translate-y-2"
-          >
-            <div class="relative mb-4">
-              <img
-                src="https://img.icons8.com/color/96/000000/user-male-circle.png"
-                alt="Irfan"
-                class="w-24 h-24 mx-auto"
-              />
-              <img
-                src="/images/pandamo no bg.png"
-                alt="Panda"
-                class="w-10 h-10 absolute -top-3 -right-3"
-              />
-            </div>
-            <h3 class="text-xl font-bold text-purple-800 mb-1">Haziq</h3>
-            <p class="text-yellow-600 font-semibold mb-3">Marketing guy</p>
-            <p class="text-purple-600 text-sm">Share fun learning with you</p>
-          </div>
-
-          <div
-            class="bg-white rounded-xl p-6 text-center shadow-lg hover:shadow-xl transition duration-300 transform hover:-translate-y-2"
-          >
-            <div class="relative mb-4">
-              <img
-                src="https://img.icons8.com/color/96/000000/user-male-circle.png"
-                alt="Haziq"
-                class="w-24 h-24 mx-auto"
-              />
-              <img
-                src="/images/pandamo no bg.png"
-                alt="Panda"
-                class="w-10 h-10 absolute -top-3 -right-3"
-              />
-            </div>
-            <h3 class="text-xl font-bold text-purple-800 mb-1">Irfan</h3>
-            <p class="text-yellow-600 font-semibold mb-3">Story Creator</p>
-            <p class="text-purple-600 text-sm">Makes finance fun</p>
-          </div>
-
-          <div
-            class="bg-white rounded-xl p-6 text-center shadow-lg hover:shadow-xl transition duration-300 transform hover:-translate-y-2"
-          >
-            <div class="relative mb-4">
-              <img
-                src="https://img.icons8.com/color/96/000000/user-female-circle.png"
-                alt="Hudzad"
-                class="w-24 h-24 mx-auto"
-              />
-              <img
-                src="/images/pandamo no bg.png"
-                alt="Panda"
-                class="w-10 h-10 absolute -top-3 -right-3"
-              />
-            </div>
-            <h3 class="text-xl font-bold text-purple-800 mb-1">Hudazad</h3>
-            <p class="text-yellow-600 font-semibold mb-3">Design Master</p>
-            <p class="text-purple-600 text-sm">Brings Pandamo to life</p>
-          </div>
-
-          <div
-            class="bg-white rounded-xl p-6 text-center shadow-lg hover:shadow-xl transition duration-300 transform hover:-translate-y-2"
-          >
-            <div class="relative mb-4">
-              <img
-                src="https://img.icons8.com/color/96/000000/user-female-circle.png"
-                alt="Aina"
-                class="w-24 h-24 mx-auto"
-              />
-              <img
-                src="/images/pandamo no bg.png"
-                alt="Panda"
-                class="w-10 h-10 absolute -top-3 -right-3"
-              />
-            </div>
-            <h3 class="text-xl font-bold text-purple-800 mb-1">Aina</h3>
-            <p class="text-yellow-600 font-semibold mb-3">Education Expert</p>
-            <p class="text-purple-600 text-sm">Kid-approved learning</p>
-          </div>
-        </div>
-
-        <div class="mt-16 text-center">
-          <h3 class="text-2xl font-bold text-purple-800 mb-6">
-            Follow Pandamo's Adventures!
-          </h3>
-          <div class="flex justify-center space-x-6">
-            <a
-              href="https://www.instagram.com/learnwithpandamo/"
-              class="bg-purple-600 text-white p-3 rounded-full hover:bg-purple-700 transition duration-300"
-            >
-              <img
-                src="https://img.icons8.com/color/48/000000/instagram-new.png"
-                alt="Instagram"
-                class="w-8 h-8"
-              />
-            </a>
-            <a
-              href="https://www.facebook.com/profile.php?id=61561466416930"
-              class="bg-purple-600 text-white p-3 rounded-full hover:bg-purple-700 transition duration-300"
-            >
-              <img
-                src="https://img.icons8.com/color/48/000000/facebook.png"
-                alt="Facebook"
-                class="w-8 h-8"
-              />
-            </a>
-            <a
-              href="https://www.linkedin.com/company/pandamohq/"
-              class="bg-purple-600 text-white p-3 rounded-full hover:bg-purple-700 transition duration-300"
-            >
-              <img
-                src="https://img.icons8.com/?size=100&id=xuvGCOXi8Wyg&format=png&color=000000"
-                alt="TikTok"
-                class="w-8 h-8"
-              />
-            </a>
-            <a
-              href="https://www.youtube.com/@LearnWithPandamo"
-              class="bg-purple-600 text-white p-3 rounded-full hover:bg-purple-700 transition duration-300"
-            >
-              <img
-                src="https://img.icons8.com/color/48/000000/youtube-play.png"
-                alt="YouTube"
-                class="w-8 h-8"
-              />
-            </a>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section id="contact-form" class="py-20 bg-white">
-      <div class="container mx-auto px-6">
-        <h2
-          class="text-3xl md:text-4xl font-bold text-center text-purple-800 mb-16"
-        >
-          Contact Us
-        </h2>
-        <div class="flex justify-center">
-          <iframe
-            src="https://docs.google.com/forms/d/e/1FAIpQLScy6FAADIx09vnw0BtQsRjfAVphB1vUvCK-f83oGhb7zzUsEA/viewform?embedded=true"
-            width="640"
-            height="580"
-            frameborder="0"
-            marginheight="0"
-            marginwidth="0"
-            >Loading…</iframe
-          >
-        </div>
-      </div>
-    </section>
-
-    <!-- Footer -->
-    <footer class="bg-purple-800 text-white py-12">
-      <div class="container mx-auto px-6">
-        <div class="flex flex-col md:flex-row justify-between">
-          <div class="mb-8 md:mb-0">
-            <div class="flex items-center mb-4">
-              <img
-                src="/images/pandamo no bg.png"
-                alt="Pandamo Logo"
-                class="h-10 w-10 mr-2"
-              />
-              <span class="font-bold text-xl">Pandamo</span>
-            </div>
-            <p class="text-purple-200 mb-4">
-              Making financial literacy fun for kids aged 6-12 through AR
-              technology and storytelling.
-            </p>
-            <a href="#" class="inline-block mb-6">
-              <img
-                src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg"
-                alt="Get it on Google Play"
-                class="h-10"
-              />
-            </a>
-          </div>
-
-          <div class="grid grid-cols-2 md:grid-cols-3 gap-8">
-            <div>
-              <h4 class="font-bold text-yellow-400 mb-4">Quick Links</h4>
-              <ul class="space-y-2">
-                <li>
-                  <a
-                    href="#home"
-                    class="text-purple-200 hover:text-white transition duration-300"
-                    >Home</a
-                  >
-                </li>
-                <li>
-                  <a
-                    href="#about"
-                    class="text-purple-200 hover:text-white transition duration-300"
-                    >About</a
-                  >
-                </li>
-                <li>
-                  <a
-                    href="#products"
-                    class="text-purple-200 hover:text-white transition duration-300"
-                    >Products</a
-                  >
-                </li>
-                <li>
-                  <a
-                    href="#achievements"
-                    class="text-purple-200 hover:text-white transition duration-300"
-                    >Achievements</a
-                  >
-                </li>
-                <li>
-                  <a
-                    href="#team"
-                    class="text-purple-200 hover:text-white transition duration-300"
-                    >Our Team</a
-                  >
-                </li>
-              </ul>
-            </div>
-
-            <div>
-              <h4 class="font-bold text-yellow-400 mb-4">Contact Us</h4>
-              <ul class="space-y-2">
-                <li class="flex items-center">
-                  <img
-                    src="https://img.icons8.com/color/24/000000/whatsapp.png"
-                    alt="WhatsApp"
-                    class="w-5 h-5 mr-2"
-                  />
-                  <span class="text-purple-200">+60143992144</span>
-                </li>
-                <li class="flex items-center">
-                  <img
-                    src="https://img.icons8.com/color/24/000000/email.png"
-                    alt="Email"
-                    class="w-5 h-5 mr-2"
-                  />
-                  <span class="text-purple-200">pandamo.work@gmail.com</span>
-                </li>
-              </ul>
-            </div>
-
-            <div>
-              <h4 class="font-bold text-yellow-400 mb-4">Newsletter</h4>
-              <p class="text-purple-200 mb-4">Get money tips for your kids!</p>
-              <form id="newsletter-form" class="flex">
-                <input
-                  type="email"
-                  id="newsletter-email"
-                  placeholder="Your email"
-                  class="px-4 py-2 rounded-l-lg focus:outline-none text-purple-800 w-full"
-                  required
-                />
-                <button
-                  type="submit"
-                  class="bg-yellow-500 text-purple-800 px-4 py-2 rounded-r-lg font-bold hover:bg-yellow-600 transition duration-300"
-                >
-                  Join
-                </button>
-              </form>
-            </div>
-
-            <!-- Modal -->
-            <div
-              id="thank-you-modal"
-              class="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center hidden"
-            >
-              <div class="bg-white rounded-lg p-6 shadow-lg text-center">
-                <h3 class="text-xl font-bold text-purple-800 mb-4">
-                  Thank You!
-                </h3>
-                <p class="text-purple-700 mb-4">
-                  Thanks for signing up for our newsletter!
-                </p>
-                <button
-                  id="close-modal"
-                  class="bg-yellow-500 text-purple-800 px-4 py-2 rounded-lg font-bold hover:bg-yellow-600 transition duration-300"
-                >
-                  Close
-                </button>
-              </div>
-            </div>
-
-            <script>
-              const form = document.getElementById("newsletter-form");
-              const emailInput = document.getElementById("newsletter-email");
-              const modal = document.getElementById("thank-you-modal");
-              const closeModal = document.getElementById("close-modal");
-
-              form.addEventListener("submit", (e) => {
-                e.preventDefault();
-                const email = emailInput.value;
-
-                // Save email to localStorage (or send to server via API)
-                localStorage.setItem("newsletterEmail", email);
-
-                // Show modal
-                modal.classList.remove("hidden");
-              });
-
-              closeModal.addEventListener("click", () => {
-                modal.classList.add("hidden");
-              });
-            </script>
-          </div>
-        </div>
-
-        <div
-          class="border-t border-purple-700 mt-12 pt-8 text-center text-purple-300"
-        >
-          <p>&copy; 2024 Pandamo. All rights reserved.</p>
-        </div>
-      </div>
-    </footer>
-
-    <script>
-      // Mobile menu toggle
-      const btn = document.querySelector(".mobile-menu-button");
-      const menu = document.querySelector(".mobile-menu");
-
-      btn.addEventListener("click", () => {
-        menu.classList.toggle("hidden");
-      });
-
-      // Smooth scrolling for anchor links
-      document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
-        anchor.addEventListener("click", function (e) {
-          e.preventDefault();
-
-          document.querySelector(this.getAttribute("href")).scrollIntoView({
-            behavior: "smooth",
-          });
-
-          // Close mobile menu if open
-          if (!menu.classList.contains("hidden")) {
-            menu.classList.add("hidden");
-          }
-        });
-      });
-
-      // Simple animation observer
-      const animateOnScroll = () => {
-        const elements = document.querySelectorAll(".transform");
-
-        elements.forEach((element) => {
-          const elementPosition = element.getBoundingClientRect().top;
-          const screenPosition = window.innerHeight / 1.2;
-
-          if (elementPosition < screenPosition) {
-            element.classList.add("translate-y-0", "opacity-100");
-            element.classList.remove("translate-y-10", "opacity-0");
-          }
-        });
-      };
-
-      // Initialize elements with opacity-0 and translated
-      document.addEventListener("DOMContentLoaded", () => {
-        const animatedElements = document.querySelectorAll(".transform");
-        animatedElements.forEach((el) => {
-          el.classList.add("opacity-0", "translate-y-10");
-          el.classList.remove("translate-y-0", "opacity-100");
+        document.querySelector(this.getAttribute("href")).scrollIntoView({
+          behavior: "smooth",
         });
 
-        // Run once on load
-        animateOnScroll();
+        // Close mobile menu if open
+        if (!menu.classList.contains("hidden")) {
+          menu.classList.add("hidden");
+        }
+      });
+    });
+
+    // Simple animation observer
+    const animateOnScroll = () => {
+      const elements = document.querySelectorAll(".transform");
+
+      elements.forEach((element) => {
+        const elementPosition = element.getBoundingClientRect().top;
+        const screenPosition = window.innerHeight / 1.2;
+
+        if (elementPosition < screenPosition) {
+          element.classList.add("translate-y-0", "opacity-100");
+          element.classList.remove("translate-y-10", "opacity-0");
+        }
+      });
+    };
+
+    // Initialize elements with opacity-0 and translated
+    document.addEventListener("DOMContentLoaded", () => {
+      const animatedElements = document.querySelectorAll(".transform");
+      animatedElements.forEach((el) => {
+        el.classList.add("opacity-0", "translate-y-10");
+        el.classList.remove("translate-y-0", "opacity-100");
       });
 
-      // Run on scroll
-      window.addEventListener("scroll", animateOnScroll);
-    </script>
-  </body>
+      // Run once on load
+      animateOnScroll();
+    });
+
+    // Run on scroll
+    window.addEventListener("scroll", animateOnScroll);
+  </script>
+</body>
+
 </html>
